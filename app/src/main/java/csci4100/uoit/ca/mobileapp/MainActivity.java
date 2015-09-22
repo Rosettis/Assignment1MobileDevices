@@ -4,40 +4,20 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
 
-import java.util.Random;
-
-public class QuizActivity extends Activity {
-
-    String[] questionArray;
+/**
+ * Created by 100490515 on 9/22/2015.
+ */
+public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz);
-
-        questionArray = getResources().getStringArray(R.array.quiz_question);
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        updateTextView();
-    }
-
-    private void updateTextView() {
-        TextView textView = (TextView)findViewById(R.id.randomTextView);
-        Random random = new Random();
-
-        int maxIndex = questionArray.length;
-        int generatedIndex = random.nextInt(maxIndex);
-
-        textView.setText(questionArray[generatedIndex]);
+        setContentView(R.layout.activity_menu);
     }
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu init) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_quiz, menu);
+        getMenuInflater().inflate(R.menu.menu_quiz, init);
         return true;
     }
 
