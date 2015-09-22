@@ -1,0 +1,13 @@
+<resources>
+    //App Name
+    <string name="app_name">MobileApp</string>
+    //Text
+    <string name="hello_world">Hello world!</string>
+    <string name="quiz_question">Quiz questions will go here</string>
+    //Buttons
+    <string name="yes_button">Yes</string>
+    <string name="no_button">No</string>
+    <string name="stop_button">No More Questions, Please</string>
+    //Menu
+    <string name="action_settings">Settings</string>
+</resources>
