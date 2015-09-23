@@ -10,21 +10,20 @@
     tools:context=".QuizActivity"
     android:backgroundTintMode="src_atop">
 
-    //Question Text
+    //Game Frame
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" >
 
-
+        //Question Text
         <TextView
             android:id="@+id/randomTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|top"
             android:textAlignment="center" />
-
         //Yes Button
         <Button
             android:layout_width="wrap_content"

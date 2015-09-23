@@ -11,7 +11,6 @@ import android.widget.TextView;
 import java.util.Random;
 
 public class QuizActivity extends Activity {
-
     String[] questionArray;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,13 +19,11 @@ public class QuizActivity extends Activity {
 
         questionArray = getResources().getStringArray(R.array.quiz_question);
     }
-
     @Override
     public void onResume() {
         super.onResume();
         updateTextView();
     }
-
     private void updateTextView() {
         TextView textView = (TextView)findViewById(R.id.randomTextView);
         Random random = new Random();
@@ -42,7 +39,6 @@ public class QuizActivity extends Activity {
         getMenuInflater().inflate(R.menu.menu_quiz, menu);
         return true;
     }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -57,7 +53,6 @@ public class QuizActivity extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
-
     public void switchBack(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
