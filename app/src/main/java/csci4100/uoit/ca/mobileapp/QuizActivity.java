@@ -1,9 +1,11 @@
 package csci4100.uoit.ca.mobileapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import java.util.Random;
@@ -31,7 +33,7 @@ public class QuizActivity extends Activity {
 
         int maxIndex = questionArray.length;
         int generatedIndex = random.nextInt(maxIndex);
-
+        textView.setTextSize(40);
         textView.setText(questionArray[generatedIndex]);
     }
     @Override
@@ -54,5 +56,10 @@ public class QuizActivity extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void switchBack(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

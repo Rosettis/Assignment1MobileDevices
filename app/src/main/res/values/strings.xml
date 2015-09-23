@@ -1,20 +1,23 @@
 <resources>
     //App Name
-    <string name="app_name">MobileApp</string>
+    <string name="app_name">Quiz Game</string>
     //Text
-    <string name="hello_world">Hello world!</string>
     <string-array name="quiz_question">
         <item>Quiz questions will go here</item>
         <item>Are you feeling hungry right now?</item>
         <item>Are you the creator of this program?</item>
         <item>Do you know a Matthew?</item>
         <item>Is he a good person?</item>
-
+        <item>IS Matthew forcing you to test this?</item>
     </string-array>
     //Buttons
     <string name="yes_button">Yes</string>
     <string name="no_button">No</string>
     <string name="stop_button">Stop Asking</string>
+    <string name="button_start">Let\'s Begin!</string>
     //Menu
     <string name="action_settings">Settings</string>
+    <string name="title_activity_quiz2">Questioning</string>
+
+    <string name="hello_world">Hello world!</string>
 </resources>

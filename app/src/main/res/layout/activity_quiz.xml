@@ -15,44 +15,47 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true" >
+
 
         <TextView
             android:id="@+id/randomTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|top" />
+            android:layout_gravity="center_horizontal|top"
+            android:textAlignment="center" />
 
-    //Yes Button
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/yes_button"
-        android:textColor="@color/yes_button_text"
-        android:id="@+id/yesButton"
-        android:layout_gravity="start|bottom"
-        android:clickable="true"
-        android:enabled="true"
-        android:focusableInTouchMode="false" />
-    //No Button
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/no_button"
-        android:textColor="@color/no_button_text"
-        android:id="@+id/noButton"
-        android:layout_gravity="end|bottom"
-        android:clickable="true"
-        android:enabled="true" />
-    //Stop Button
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/stop_button"
-        android:id="@+id/stopButton"
-        android:layout_gravity="center_horizontal|bottom"
-        android:clickable="true"
-        android:enabled="true" />
+        //Yes Button
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes_button"
+            android:textColor="@color/yes_button_text"
+            android:id="@+id/yesButton"
+            android:layout_gravity="start|bottom"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusableInTouchMode="false" />
+        //No Button
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_button"
+            android:textColor="@color/no_button_text"
+            android:id="@+id/noButton"
+            android:layout_gravity="end|bottom"
+            android:clickable="true"
+            android:enabled="true" />
+        //Stop Button
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stop_button"
+            android:id="@+id/stopButton"
+            android:layout_gravity="center_horizontal|bottom"
+            android:clickable="true"
+            android:enabled="true"
+            android:onClick="switchBack"/>
 
     </FrameLayout>
 </RelativeLayout>
