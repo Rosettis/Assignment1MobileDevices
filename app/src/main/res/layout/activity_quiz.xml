@@ -3,10 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".QuizActivity"
     android:backgroundTintMode="src_atop">
 
@@ -15,7 +11,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" >
+        android:layout_alignParentStart="true"
+        android:background="#040404"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="60dp">
 
         //Question Text
         <TextView
@@ -29,22 +29,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/yes_button"
-            android:textColor="@color/yes_button_text"
+            android:textColor="#ffffff"
             android:id="@+id/yesButton"
             android:layout_gravity="start|bottom"
             android:clickable="true"
             android:enabled="true"
-            android:focusableInTouchMode="false" />
+            android:focusableInTouchMode="false"
+            android:background="#0aab21" />
         //No Button
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/no_button"
-            android:textColor="@color/no_button_text"
             android:id="@+id/noButton"
             android:layout_gravity="end|bottom"
             android:clickable="true"
-            android:enabled="true" />
+            android:enabled="true"
+            android:background="#ff0f1f"
+            android:textColor="#ffffff" />
         //Stop Button
         <Button
             android:layout_width="wrap_content"
@@ -54,7 +56,11 @@
             android:layout_gravity="center_horizontal|bottom"
             android:clickable="true"
             android:enabled="true"
-            android:onClick="switchBack"/>
+            android:onClick="switchBack"
+            android:background="#2e29ff"
+            android:textColor="#ffffff"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp" />
 
     </FrameLayout>
 </RelativeLayout>

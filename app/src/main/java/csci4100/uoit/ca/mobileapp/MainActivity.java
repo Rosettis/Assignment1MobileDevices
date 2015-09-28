@@ -14,6 +14,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // show the correct view (layout)
         setContentView(R.layout.activity_menu);
     }
     @Override

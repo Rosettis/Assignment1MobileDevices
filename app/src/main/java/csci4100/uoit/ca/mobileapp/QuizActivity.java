@@ -2,6 +2,7 @@ package csci4100.uoit.ca.mobileapp;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -31,6 +32,7 @@ public class QuizActivity extends Activity {
         int maxIndex = questionArray.length;
         int generatedIndex = random.nextInt(maxIndex);
         textView.setTextSize(40);
+        textView.setTextColor(Color.WHITE);
         textView.setText(questionArray[generatedIndex]);
     }
     @Override
