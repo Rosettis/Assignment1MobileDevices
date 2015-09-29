@@ -13,8 +13,8 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:background="#040404"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
         android:paddingBottom="60dp">
 
         //Question Text
@@ -23,29 +23,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|top"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:gravity="center"/>
         //Yes Button
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/yes_button"
-            android:textColor="#ffffff"
             android:id="@+id/yesButton"
             android:layout_gravity="start|bottom"
             android:clickable="true"
             android:enabled="true"
             android:focusableInTouchMode="false"
-            android:background="#0aab21" />
-        //No Button
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/no_button"
-            android:id="@+id/noButton"
-            android:layout_gravity="end|bottom"
-            android:clickable="true"
-            android:enabled="true"
-            android:background="#ff0f1f"
+            android:background="#0aab21"
             android:textColor="#ffffff" />
         //Stop Button
         <Button
@@ -61,6 +51,16 @@
             android:textColor="#ffffff"
             android:paddingRight="10dp"
             android:paddingLeft="10dp" />
-
+        //No Button
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_button"
+            android:id="@+id/noButton"
+            android:layout_gravity="end|bottom"
+            android:clickable="true"
+            android:enabled="true"
+            android:background="#ff0f1f"
+            android:textColor="#ffffff" />
     </FrameLayout>
 </RelativeLayout>
