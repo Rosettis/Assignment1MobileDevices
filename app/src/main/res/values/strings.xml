@@ -1,20 +1,35 @@
 <resources>
     //App Name
     <string name="app_name">Quiz Game</string>
+
     //Text
     <string-array name="quiz_question">
-        <item>Quiz questions will go here</item>
         <item>Are you feeling hungry right now?</item>
-        <item>Are you the creator of this program?</item>
-        <item>Do you know a Matthew?</item>
-        <item>Is he a good person?</item>
-        <item>Is Matthew forcing you to test this?</item>
+        <item>Do you enjoy school?</item>
+        <item>Do you have a job?</item>
+        <item>Do you enjoy the winter?</item>
+        <item>Are you vegan?</item>
+        <item>Do you wear glasses?</item>
+        <item>Do you own a car?</item>
+        <item>Did you take a shower today?</item>
+        <item>Do you speak multiple languages?</item>
+        <item>Do you like pizza?</item>
+        <item>Is wearing a scarf a fashion statement?</item>
+        <item>Do you like Pina Coladas,\nGetting caught in the rain?</item>
+        <item>Is gaming your daily workout?</item>
+
     </string-array>
-    //Buttons
+
+    //In-Game Buttons
     <string name="yes_button">Yes</string>
     <string name="no_button">No</string>
-    <string name="stop_button">Stop Asking</string>
-    <string name="button_start">Let\'s Begin!</string>
+    <string name="stop_button">Results</string>
+
+    //Main Menu
+    <string name="button_start">Press to Start</string>
+    <string name="yes_score">Yes = %1$d</string>
+    <string name="no_score">No = %1$d</string>
+
     //Menu
     <string name="action_settings">Settings</string>
     <string name="title_activity_quiz2">Questioning</string>
