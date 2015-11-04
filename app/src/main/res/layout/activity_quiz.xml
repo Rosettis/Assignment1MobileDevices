@@ -23,20 +23,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|top"
-            android:textAlignment="center"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:layout_marginTop="100sp"
+            />
         //Yes Button
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/yes_button"
+            android:textColor="#ffffff"
             android:id="@+id/yesButton"
             android:layout_gravity="start|bottom"
             android:clickable="true"
             android:enabled="true"
             android:focusableInTouchMode="false"
-            android:background="#0aab21"
-            android:textColor="#ffffff" />
+            android:background="#327d26"
+            android:textColor="@color/text_color"
+            android:onClick="pressYes"
+            />
         //Stop Button
         <Button
             android:layout_width="wrap_content"
@@ -47,10 +51,11 @@
             android:clickable="true"
             android:enabled="true"
             android:onClick="switchBack"
-            android:background="#2e29ff"
-            android:textColor="#ffffff"
+            android:background="#26357d"
+            android:textColor="@color/text_color"
             android:paddingRight="10dp"
-            android:paddingLeft="10dp" />
+            android:paddingLeft="10dp"
+            />
         //No Button
         <Button
             android:layout_width="wrap_content"
@@ -60,7 +65,9 @@
             android:layout_gravity="end|bottom"
             android:clickable="true"
             android:enabled="true"
-            android:background="#ff0f1f"
-            android:textColor="#ffffff" />
+            android:background="#7d2626"
+            android:textColor="@color/text_color"
+            android:onClick="pressNo"
+            />
     </FrameLayout>
 </RelativeLayout>

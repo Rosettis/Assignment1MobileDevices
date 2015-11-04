@@ -1,26 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#040404"
     android:weightSum="1">
-
-    //Menu Frame
-    <FrameLayout
+    //Start Button
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100sp"
+        android:padding="20sp"
+        android:textSize="25sp"
+        android:textColor="@color/text_color"
+        android:background="#327d26"
+        android:text="@string/button_start"
+        android:onClick="switchScreens"
+        />
+    <RelativeLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1.02"
-        android:background="#040404">
-        //Start Button
-        <Button
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal">
+        //Yes Scores
+        <TextView
+            android:id="@+id/yesScore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center|center_horizontal"
-            android:textSize="25sp"
-            android:text="@string/button_start"
-            android:onClick="switchScreens"/>
-    </FrameLayout>
-
-</LinearLayout>
+            android:textSize="40sp"
+            android:textColor="@color/text_color"
+            />
+        //No Scores
+        <TextView
+            android:id="@+id/noScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yesScore"
+            android:textSize="40sp"
+            android:textColor="@color/text_color"
+            />
+    </RelativeLayout>
+</FrameLayout>
