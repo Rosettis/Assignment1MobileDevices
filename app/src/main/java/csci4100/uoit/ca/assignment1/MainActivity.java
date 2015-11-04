@@ -1,12 +1,10 @@
-package csci4100.uoit.ca.mobileapp;
+package csci4100.uoit.ca.assignment1;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 

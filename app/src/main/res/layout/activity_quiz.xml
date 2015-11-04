@@ -6,7 +6,7 @@
     tools:context=".QuizActivity"
     android:backgroundTintMode="src_atop">
 
-    //Game Frame
+    <!--//Game Frame-->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,7 +17,7 @@
         android:paddingRight="20sp"
         android:paddingBottom="60dp">
 
-        //Question Text
+        <!--//Question Text-->
         <TextView
             android:id="@+id/randomTextView"
             android:layout_width="wrap_content"
@@ -26,12 +26,11 @@
             android:gravity="center"
             android:layout_marginTop="100sp"
             />
-        //Yes Button
+        <!--//Yes Button-->
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/yes_button"
-            android:textColor="#ffffff"
             android:id="@+id/yesButton"
             android:layout_gravity="start|bottom"
             android:clickable="true"
@@ -41,7 +40,7 @@
             android:textColor="@color/text_color"
             android:onClick="pressYes"
             />
-        //Stop Button
+        <!--//Stop Button-->
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -56,7 +55,7 @@
             android:paddingRight="10dp"
             android:paddingLeft="10dp"
             />
-        //No Button
+        <!--//No Button-->
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

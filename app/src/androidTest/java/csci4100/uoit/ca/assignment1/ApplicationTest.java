@@ -1,4 +1,4 @@
-package csci4100.uoit.ca.mobileapp;
+package csci4100.uoit.ca.assignment1;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
